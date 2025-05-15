@@ -1,0 +1,184 @@
+/* Reset & basic styling */
+* {
+    margin: 0; padding: 0; box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  body {
+    background: #f9f9f9;
+    color: #222;
+    line-height: 1.6;
+  }
+  
+  .section {
+    max-width: 900px;
+    margin: 3rem auto;
+    padding: 0 1rem;
+  }
+  
+  /* Header with background image behind name */
+  .header {
+    position: relative;
+    text-align: center;
+    margin-top: 3rem;
+    margin-bottom: 4rem;
+  }
+  
+  .name-image-container {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .name {
+    font-size: 3.5rem;
+    font-weight: 900;
+    position: relative;
+    z-index: 2;
+    color: #222;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    user-select: none;
+  }
+  
+  .name-bg-image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 150%;
+    height: 150%;
+    background-image: url('your-image.jpg'); /* Replace with your image file */
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.05; /* 5% opacity */
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    border-radius: 15px;
+  }
+  
+  .tagline {
+    font-size: 1.25rem;
+    margin-top: 0.5rem;
+    color: #555;
+  }
+  
+  /* Cards */
+  .cards-container {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .card {
+    background: white;
+    padding: 1.5rem 2rem;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: #333;
+    flex: 1 1 250px;
+    text-align: center;
+    user-select: none;
+  }
+  
+  .card:hover {
+    box-shadow: 0 15px 35px rgba(29,185,84,0.6);
+    transform: translateY(-10px);
+  }
+  
+  /* Video Showcase */
+  #video-showcase {
+    text-align: center;
+  }
+  
+  .video-list {
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+  }
+  
+  .video-list iframe {
+    width: 320px;
+    height: 180px;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(29,185,84,0.5);
+    transition: transform 0.3s ease;
+  }
+  
+  .video-list iframe:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Technologies */
+  .tech-list {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 1rem 0;
+  }
+  
+  .tech-list li {
+    background: #1db954;
+    color: white;
+    padding: 0.5rem 1.25rem;
+    border-radius: 30px;
+    font-weight: 600;
+    font-size: 1rem;
+    box-shadow: 0 4px 10px rgba(29,185,84,0.6);
+  }
+  
+  /* Tariff Table */
+  .tariff-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+    border-radius: 15px;
+    overflow: hidden;
+  }
+  
+  .tariff-table th, .tariff-table td {
+    padding: 1rem 1.5rem;
+    background: white;
+    text-align: left;
+  }
+  
+  .tariff-table thead th {
+    background: #1db954;
+    color: white;
+    font-weight: 700;
+  }
+  
+  .tariff-table tbody tr:nth-child(even) td {
+    background: #f2f7f3;
+  }
+  
+  /* Contact */
+  #contact a {
+    color: #1db954;
+    text-decoration: none;
+    font-weight: 600;
+  }
+  
+  #contact a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Footer */
+  .footer {
+    text-align: center;
+    padding: 1.5rem 1rem;
+    font-size: 0.9rem;
+    color: #777;
+    background: #e8f5e9;
+    margin-top: 4rem;
+  }
+  
